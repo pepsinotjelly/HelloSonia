@@ -1,6 +1,7 @@
 package com.bubble.thrift;
 
 import com.bubble.biz.SayHelloBiz;
+import com.bubble.constants.annotations.ThriftService;
 import org.apache.thrift.TException;
 import com.bubble.thrift.BaseResp;
 import com.bubble.thrift.test.HelloRequest;
@@ -13,6 +14,7 @@ import org.apache.thrift.TException;
  * @Date: 2022/1/21 11:42 AM
  * @Desc:
  */
+@ThriftService(serviceImplName = "SayHelloServiceImpl.class",PORT = 7090)
 public class SayHelloServiceImpl implements SayHelloService.Iface {
     SayHelloBiz sayHelloBiz = new SayHelloBiz();
 

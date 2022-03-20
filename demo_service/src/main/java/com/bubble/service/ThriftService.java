@@ -27,27 +27,27 @@ public class ThriftService {
             TServerTransport serverTransport = new TServerSocket(PORT);
             TBinaryProtocol.Factory protocolFactory = new TBinaryProtocol.Factory();
             TMultiplexedProcessor processors = new TMultiplexedProcessor();
-            Class<?>[] serverInterfaces = serverImplClass.getInterfaces(); // SayHelloServiceImpl
+            Class<?>[] serverInterfaces = serverImplClass.getInterfaces();
 
             for (Class<?> serverInterface : serverInterfaces) {
-                String interfaceName = serverInterface.getName(); // Iface
+                String interfaceName = serverInterface.getName();
                 matcher = pattern.matcher(interfaceName);
                 if (matcher.find()) {
-                    String classTName = matcher.group(1); // SayHelloService
-                    Object classTObject = Class.forName(classTName).newInstance(); // SayHelloService
-                    Class iface = Class.forName(classTName + "$Iface"); // SayHelloService.Iface
-                    Object object = serverImplClass.newInstance(); // SayHelloServiceImpl
+                    String classTName = matcher.group(1);
+                    Object classTObject = Class.forName(classTName).newInstance();
+                    Class iface = Class.forName(classTName + "$Iface");
+                    Object object = serverImplClass.newInstance();
                     TProcessor processor = (TProcessor) Class.forName(classTName + "$Processor")
                             .getDeclaredConstructor(iface)
-                            .newInstance(object); // SayHelloService.Processor<SayHelloService.Iface>(new SayHelloServiceImpl())
+                            .newInstance(object);
                     processors.registerProcessor(classTObject.getClass().getSimpleName(), processor);
                 }
             }
 
-            TThreadPoolServer.Args args = new TThreadPoolServer.Args(serverTransport); // 初始化参数
+            TThreadPoolServer.Args args = new TThreadPoolServer.Args(serverTransport);
             args.protocolFactory(protocolFactory);
             args.processor(processors);
-            args.minWorkerThreads(10);
+            args.minWorkerThreads(1);
             args.maxWorkerThreads(10);
             TServer server = new TThreadPoolServer(args);
             server.serve();
@@ -55,6 +55,5 @@ public class ThriftService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

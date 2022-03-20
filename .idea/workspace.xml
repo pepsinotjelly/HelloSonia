@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efb2347b-a85b-427f-8bb8-ae7502f9389f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HelloSonia.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/.github/dependabot.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/_config.landscape.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/scaffolds/draft.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/scaffolds/page.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/scaffolds/post.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/source/_posts/hello-world.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/website/themes/.gitkeep" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_service/src/main/java/com/bubble/service/ThriftService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_service/src/main/java/com/bubble/service/ThriftService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo_service/src/main/java/com/bubble/thrift/SayHelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo_service/src/main/java/com/bubble/thrift/SayHelloServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -59,6 +48,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -68,7 +58,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ClientApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceApplication">
     <configuration name="ClientApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bubble.ClientApplication" />
       <module name="demo_client" />
@@ -110,9 +100,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServiceApplication" />
         <item itemvalue="Spring Boot.ClientApplication" />
         <item itemvalue="Application.ClientApplication" />
-        <item itemvalue="Spring Boot.ServiceApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -126,7 +116,9 @@
       <updated>1642499194042</updated>
       <workItem from="1642499197424" duration="1987000" />
       <workItem from="1642561624725" duration="224000" />
-      <workItem from="1642735253813" duration="3807000" />
+      <workItem from="1642735253813" duration="4270000" />
+      <workItem from="1642742917914" duration="2544000" />
+      <workItem from="1642746693971" duration="5093000" />
     </task>
     <servers />
   </component>
